@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Esther KPOVIESSI – Développeuse Full-Stack &amp; Administratrice Réseaux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF3F1;--surface:#E1EAE7;--ink:#12303A;--muted:#4A6269;--teal:#1F7A75;--amber:#B9690A;--line:#B9CAC6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10262B;--surface:#173439;--ink:#E7F0EE;--muted:#9DB5B2;--teal:#5CC4BB;--amber:#F0B25A;--line:#2D4C51}}
+:root[data-theme="dark"]{--bg:#10262B;--surface:#173439;--ink:#E7F0EE;--muted:#9DB5B2;--teal:#5CC4BB;--amber:#F0B25A;--line:#2D4C51}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.125rem;line-height:1.65}
+h1,h2,h3,.sans{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+a{color:var(--teal)}
+a:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 1.25rem}
+header.top{padding:1.25rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+header.top nav{display:flex;gap:1.25rem;flex-wrap:wrap}
+header.top a{color:var(--ink);text-decoration:none}
+header.top a:hover{color:var(--teal)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center;padding:3rem 0 4rem}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.02;margin:0 0 1rem;font-weight:800;letter-spacing:-.02em}
+.lead{font-size:1.3rem;max-width:34rem;color:var(--muted);margin:0 0 1.5rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;background:var(--ink);color:var(--bg)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.topo{width:100%;height:auto;color:var(--ink)}
+.topo .n{fill:var(--surface);stroke:currentColor;stroke-width:2}
+.topo .l{stroke:currentColor;stroke-width:2;fill:none}
+.topo .dash{stroke:var(--amber);stroke-width:3;stroke-dasharray:6 6;fill:none}
+.topo text{font-family:"Bricolage Grotesque",sans-serif;font-size:13px;fill:currentColor;font-weight:700}
+.topo .fw{fill:var(--amber);stroke:currentColor;stroke-width:2}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin:0 0 1.5rem;letter-spacing:-.01em}
+.about{max-width:42rem}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.p{padding:1.5rem;background:var(--surface);border-radius:14px}
+.p.main{grid-column:1/-1;background:var(--ink);color:var(--bg)}
+.p.main .tag{border-color:var(--bg);color:var(--bg)}
+.p.main h3{color:var(--bg)}
+h3{margin:0 0 .5rem;font-size:1.35rem}
+.p p{margin:.25rem 0 1rem}
+.tags{display:flex;gap:.5rem;flex-wrap:wrap;padding:0;margin:0;list-style:none}
+.tag{font-family:"Bricolage Grotesque",sans-serif;font-size:.85rem;font-weight:500;padding:.15rem .65rem;border:1.5px solid var(--teal);color:var(--teal);border-radius:99px}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.skills h3{color:var(--amber)}
+.tl{margin:0;padding:0;list-style:none;border-left:3px solid var(--teal)}
+.tl li{padding:0 0 1.25rem 1.25rem}
+.tl b{font-family:"Bricolage Grotesque",sans-serif}
+.tl span{display:block;color:var(--muted);font-size:1rem}
+.contact a{display:block;font-size:1.2rem;margin:.3rem 0}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+@media (max-width:760px){.hero,.proj,.skills{grid-template-columns:1fr}.hero{padding-top:1.5rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><span>Esther KPOVIESSI</span>
+<nav><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav></header>
+
+<div class="hero">
+<div>
+<h1>Je code des applications et je sécurise les réseaux.</h1>
+<p class="lead">Esther, développeuse Full-Stack et administratrice réseaux. Je conçois des sites web avec PHP et React, et des réseaux d’entreprise protégés par des ACL.</p>
+<div class="btns"><a class="btn" href="#projets">Voir mes projets</a><a class="btn alt" href="#contact">Me contacter</a></div>
+</div>
+<svg class="topo" viewBox="0 0 360 240" role="img" aria-label="Schéma d’un réseau : un réseau local, un pare-feu avec ACL, et une zone démilitarisée">
+<rect class="n" x="10" y="30" width="110" height="180" rx="12"/>
+<text x="22" y="52">LAN</text>
+<circle class="n" cx="65" cy="90" r="14"/><circle class="n" cx="65" cy="135" r="14"/><circle class="n" cx="65" cy="180" r="14"/>
+<path class="l" d="M79 90H150M79 135H150M79 180H150M150 90V180"/>
+<rect class="fw" x="150" y="105" width="54" height="60" rx="8"/>
+<text x="158" y="140">ACL</text>
+<path class="dash" d="M204 135H240"/>
+<rect class="n" x="240" y="60" width="110" height="150" rx="12"/>
+<text x="252" y="82">DMZ</text>
+<rect class="n" x="262" y="105" width="66" height="26" rx="5"/><rect class="n" x="262" y="150" width="66" height="26" rx="5"/>
+</svg>
+</div>
+
+<section id="a-propos"><h2>À propos</h2>
+<p class="about">Étudiante en 3e année de Licence Informatique de Gestion à l’ENEAM, j’aime relier deux mondes : celui des applications web et celui des réseaux. J’ai développé un site de gestion des courriers pendant mon stage chez Sanlam Allianz, et je configure des réseaux sécurisés avec Cisco Packet Tracer et Windows Server.</p></section>
+
+<section id="projets"><h2>Projets</h2>
+<div class="proj">
+<article class="p main"><h3>Site de gestion des courriers – Sanlam Allianz</h3>
+<p>Application web développée pendant mon stage pour suivre et gérer les courriers de l’entreprise.</p>
+<ul class="tags"><li class="tag">PHP</li><li class="tag">MySQL</li><li class="tag">HTML/CSS</li></ul></article>
+<article class="p"><h3>Réseau LAN et DMZ protégée</h3>
+<p>Configuration d’un réseau avec une zone démilitarisée, protégée par une liste de contrôle d’accès (ACL).</p>
+<ul class="tags"><li class="tag">Cisco Packet Tracer</li><li class="tag">Windows Server</li></ul></article>
+<article class="p"><h3>Générateur de codes QR</h3>
+<p>Application web pour générer, personnaliser et télécharger des codes QR. Les données sont gardées dans le navigateur.</p>
+<ul class="tags"><li class="tag">React.js</li><li class="tag">JavaScript</li><li class="tag">LocalStorage</li><li class="tag">Netlify</li></ul></article>
+</div></section>
+
+<section id="competences"><h2>Compétences</h2>
+<div class="skills">
+<div><h3>Développement</h3><ul class="tags"><li class="tag">PHP</li><li class="tag">React.js</li><li class="tag">JavaScript</li><li class="tag">HTML/CSS</li><li class="tag">MySQL</li><li class="tag">Git</li></ul></div>
+<div><h3>Réseaux</h3><ul class="tags"><li class="tag">LAN</li><li class="tag">DMZ</li><li class="tag">ACL</li><li class="tag">Cisco Packet Tracer</li><li class="tag">Windows Server</li></ul></div>
+</div></section>
+
+<section id="parcours"><h2>Parcours</h2>
+<ul class="tl">
+<li><b>Stagiaire développeuse, Sanlam Allianz</b><span>Juin à août 2026. Développement du site de gestion des courriers, vérification de l’installation et du bon fonctionnement des postes, contrôle de la connexion à Internet par câble.</span></li>
+<li><b>Licence Informatique de Gestion, ENEAM – Université d’Abomey-Calavi</b><span>Cotonou, depuis 2024, actuellement en 3e année</span></li>
+<li><b>Baccalauréat série D, Collège Privé Saint Laurent</b><span>Bénin, 2024</span></li>
+<li><b>BEPC, Collège Privé Saint Laurent</b><span>Bénin, 2021</span></li>
+</ul></section>
+
+<section id="contact" class="contact"><h2>Contact</h2>
+<p>Un stage, un projet, une question ? Écrivez-moi.</p>
+<a href="mailto:kpoviessiesther2104@gmail.com">kpoviessiesther2104@gmail.com</a>
+<a href="https://www.linkedin.com/in/esther-kpoviessi-236027418">LinkedIn : Esther Kpoviessi</a>
+<a href="tel:0147877072">01 47 87 70 72</a></section>
+<footer>© 2026 Esther KPOVIESSI</footer>
+</div>
+</body>
+</html>
